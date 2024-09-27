@@ -2,8 +2,15 @@
   {
     "id": 1,
     "description": "Buy groceries",
-    "status": "todo",
+    "status": "done",
     "createdAt": "2024-09-27T14:12:29.455022+02:00",
-    "updatedAt": "2024-09-27T14:12:29.455022+02:00"
+    "updatedAt": "2024-09-27T14:32:35.888592+02:00"
+  },
+  {
+    "id": 2,
+    "description": "Buy groceries",
+    "status": "todo",
+    "createdAt": "2024-09-27T14:32:20.677381+02:00",
+    "updatedAt": "2024-09-27T14:32:20.677381+02:00"
   }
 ]

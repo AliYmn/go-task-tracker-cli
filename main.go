@@ -162,7 +162,7 @@ func updateTask(id int, description string, taskChan chan string) {
 	}
 
 	taskChan <- "Task updated successfully"
-//}
+}
 
 // deleteTask deletes a task with the given ID
 func deleteTask(id int, taskChan chan string) {
