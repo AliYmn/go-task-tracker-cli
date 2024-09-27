@@ -106,7 +106,7 @@ func addTask(description string, taskChan chan string) {
 		UpdatedAt:   time.Now(),
 	}
 
-	tasks = append(tasks, *task) // Add the new task to the list
+	tasks = append(tasks, task) // Add the new task to the list
 
 	if err := saveTasks(tasks); err != nil {
 		taskChan <- fmt.Sprintf("Error saving task: %v", err)
@@ -162,7 +162,7 @@ func updateTask(id int, description string, taskChan chan string) {
 	}
 
 	taskChan <- "Task updated successfully"
-}
+//}
 
 // deleteTask deletes a task with the given ID
 func deleteTask(id int, taskChan chan string) {

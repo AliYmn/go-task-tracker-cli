@@ -20,8 +20,8 @@ const (
 )
 
 // loadTasks reads the tasks from the JSON file and returns them
-func loadTasks() ([]Task, error) {
-	var tasks []Task
+func loadTasks() ([]*Task, error) {
+	var tasks []*Task
 	if _, err := os.Stat(filePath); os.IsNotExist(err) {
 		return tasks, nil // Return an empty list if the file does not exist
 	}
@@ -34,7 +34,7 @@ func loadTasks() ([]Task, error) {
 }
 
 // saveTasks writes the tasks to the JSON file
-func saveTasks(tasks []Task) error {
+func saveTasks(tasks []*Task) error {
 	data, err := json.MarshalIndent(tasks, "", "  ") // Encode tasks to JSON
 	if err != nil {
 		return err
