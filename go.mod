@@ -1,3 +1,3 @@
 module task-tracker-cli
 
-go 1.18
+go 1.22.5
